@@ -137,10 +137,26 @@
         android:id="@+id/imageView"
         android:layout_below="@id/totalLabel"
         android:layout_marginTop="20sp"
-        android:layout_marginLeft="10sp"
+        android:layout_marginLeft="60sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/common" />
-
+<CheckBox
+    android:id="@+id/consentBox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imageView"
+    android:layout_marginTop="20sp"
+    android:layout_marginLeft="10sp"
+    android:text="I have reviewed my order"
+    android:textStyle="bold"></CheckBox>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/consentBox"
+        android:background=" #a4c639"
+        android:layout_marginLeft="180sp"
+        android:text="Order">
+    </Button>
 
 </RelativeLayout>

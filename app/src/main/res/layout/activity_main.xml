@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87ceeb"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/headTag"
+        android:layout_margin="25sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HappyOrders"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        ></TextView>
+
+    <Spinner
+        android:layout_below="@id/headTag"
+        android:id="@+id/SpinnerMeals"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Meals"></Spinner>
+    <SeekBar
+        android:id="@+id/SimpleSeekbar"
+        android:layout_toEndOf="@id/SeekbarLabel"
+        android:layout_below="@id/SpinnerMeals"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="1"></SeekBar>
+    <TextView
+        android:id="@+id/SeekbarLabel"
+        android:layout_below="@id/SpinnerMeals"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: "></TextView>
+    <TextView
+        android:id="@+id/PriceLabel"
+        android:layout_below="@id/SimpleSeekbar"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price of Item: "></TextView>
+    <EditText
+        android:id="@+id/Price"
+        android:layout_toEndOf="@id/PriceLabel"
+        android:layout_below="@id/SimpleSeekbar"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_width="100dp"
+        android:layout_height="25sp"
+        android:textSize="20sp"
+        android:textStyle="bold"></EditText>
+    <TextView
+        android:id="@+id/TipLabel"
+        android:layout_below="@id/PriceLabel"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Tip: "></TextView>
+
+
+    <RadioGroup
+        android:id="@+id/Radiobuttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TipLabel"
+        android:layout_marginLeft="10sp"
+        android:orientation="horizontal"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-17dp"
+        android:layout_toEndOf="@id/TipLabel">
+
+        <RadioButton
+            android:id="@+id/Radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_toEndOf="@id/TipLabel"
+            android:text="10%"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/Radiobutton2"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/Radiobutton1"
+            android:text="15%"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/Radiobutton3"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/Radiobutton2"
+            android:text="20%"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/Radiobutton4"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/Radiobutton3"
+            android:text="None"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/totalLabel"
+        android:layout_below="@id/Radiobuttons"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: "></TextView>
+    <EditText
+        android:id="@+id/totalAmount"
+        android:layout_toEndOf="@id/totalLabel"
+        android:layout_below="@id/Radiobuttons"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_width="100dp"
+        android:layout_height="25sp"
+        android:textSize="20sp"
+        android:textStyle="bold"></EditText>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@id/totalLabel"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/common" />
+
+
+</RelativeLayout>

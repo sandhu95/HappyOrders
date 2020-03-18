@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HappyOrders</string>
+    <string-array name="Meals">
+        <item>Select your Meal</item>
+        <item>Pizza</item>
+        <item>Veggie Burger</item>
+        <item>Chicken Burger</item>
+        <item>Plain Dosa</item>
+        <item>Paneer Dosa</item>
+        <item>Spring Roll</item>
+        <item>Veggie Noodles</item>
+        <item>GolGappe</item>
+        <item>Rasmalai</item>
+        <item>Mango Lassi</item>
+    </string-array>
+</resources>
